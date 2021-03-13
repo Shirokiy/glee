@@ -37,7 +37,7 @@ function browsersync() {
 //*-------------Стили--------------
 function styles() {
   return src('app/scss/style.scss')
-    .pipe(scss({outputSyle: 'compressed'}))
+    .pipe(scss({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserlist:['last 10 version'],
