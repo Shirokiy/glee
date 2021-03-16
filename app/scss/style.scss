@@ -1,10 +1,19 @@
+//===Переменные===
 @import 'vars';
+//===Шрифты===
 @import 'fonts';
+//===Сброс стилей===
 @import 'reset';
+//===Библиотеки
+@import 'libs';
+//===Глобальные стили===
 @import 'global';
+
 
 @import 'header';
 
+@import 'main';
 
+@import 'footer';
 
 @import 'media';

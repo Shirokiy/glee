@@ -1,6 +1,31 @@
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $light;
+  font-size: 14px;
+  line-height: 24px;
+  @extend %rubikR;
+  display: flex;
+  flex-direction: column;
+}
+
 .container{
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1; //*Прижимаем футер к низу
+}
+
+a {
+  color: $light;
+  font-size: 14px;
+  line-height: 24px;
+  @extend %rubikR;
 }

@@ -1,5 +1,12 @@
 $main: #436372;
 $accent: red;
+$light: #b7b7b7;
+$dark: #1f2044;
+
+%rubikR {
+  font-family: 'RubikR', sans-serif;
+  font-weight: 400;
+}
 
 %rubikM {
   font-family: 'RubikM', sans-serif;
@@ -9,4 +16,18 @@ $accent: red;
 %dmsansR {
   font-family: 'DMSansR', sans-serif;
   font-weight: 400;
+}
+%dmsansB {
+  font-family: 'DMSansB', sans-serif;
+  font-weight: 700;
+}
+
+%btn{
+  background-color: #a3bbc8;
+  border: none;
+  color: #fff;
+  padding: 19px 16px;
+  line-height: 0;
+  font-size: 14px;
+  @extend %dmsansR;
 }
