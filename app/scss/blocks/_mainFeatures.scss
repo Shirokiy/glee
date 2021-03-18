@@ -1,0 +1,42 @@
+.features {
+  &__inner {
+    background-color: #fef7f0;
+    padding: 45px 0;
+  }
+
+  &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 300px;
+  }
+
+  &__item-img {
+    display: block;
+    margin-right: 30px;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__text {
+    @extend %dmsansR;
+    font-size: 16px;
+  }
+    .support{
+      max-width: 200px;
+    }
+    .delivery{
+      max-width: 220px;
+    }
+  
+}
+
+.container {}
+
+.title {}
