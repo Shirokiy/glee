@@ -52,6 +52,7 @@ function scripts() {
   return src([
   'node_modules/jquery/dist/jquery.js',
   'node_modules/slick-carousel/slick/slick.js',
+  'node_modules/mixitup/dist/mixitup.js',
   'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
@@ -125,7 +126,7 @@ function watching() {
 exports.styles      = styles;
 exports.scripts     = scripts;
 exports.browsersync = browsersync;
-exports.imagemin    = imagemin;
+exports.images      = images;
 exports.cleanDist   = cleanDist;
 exports.woff        = woff;
 exports.woff2       = woff2;

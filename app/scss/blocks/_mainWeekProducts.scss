@@ -1,0 +1,122 @@
+.weekproducts {
+  text-align: center;
+  padding: 70px 0 100px;
+
+  &__title {
+    @extend %dmsansB;
+    font-size: 36px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 35px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    margin: 0 10px 75px;
+    @extend %dmsansB;
+    font-size: 16px;
+    color: #8b8b8b;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+
+    &.mixitup-control-active {
+      color: #1a1a1a;
+    }
+
+    &:hover {
+      color: #1a1a1a;
+    }
+
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+
+}
+
+.weekproducts-item {
+  &__img-box {
+    position: relative;
+    height: 380px;
+    max-width: 270px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &:hover {
+      .weekproducts-item__link-box {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__img {
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+
+  &__link-box {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    width: 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(1300%);
+  }
+
+  &__link {
+    display: inline-block;
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    padding-top: 15px;
+    text-align: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: all .3s;
+
+    &:hover {
+      background-color: $btn-color;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__title,
+  &__price {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  &__title {
+    @extend %dmsansM;
+    color: #243f4d;
+    padding: 15px 0;
+  }
+
+  &__price {
+    @extend %dmsansB;
+    color: $btn-color;
+    margin-bottom: 40px;
+  }
+
+}
