@@ -36,3 +36,10 @@ $btn-color: #a3bbc8;
   font-size: 14px;
   @extend %dmsansR;
 }
+
+@function max($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+  @return m#{i}n(#{$numbers});
+}
