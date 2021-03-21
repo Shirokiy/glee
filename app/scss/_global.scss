@@ -19,6 +19,12 @@ body {
   margin: 0 auto;
 }
 
+.container-content{
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .main {
   flex-grow: 1; //*Прижимаем футер к низу
 }
