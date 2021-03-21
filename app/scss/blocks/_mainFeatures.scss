@@ -1,7 +1,6 @@
 .features {
   &__inner {
     background-color: #fef7f0;
-    padding: 45px 0;
   }
 
   &__items {
@@ -13,6 +12,32 @@
   &__item {
     display: flex;
     max-width: 300px;
+    padding: 45px 0;
+    position: relative;
+  }
+
+  &__item:first-child {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #e8e4df;
+      top: 0;
+      right: -130px;
+    }
+  }
+
+    &__item:last-child {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #e8e4df;
+        top: 0;
+        left: -130px;
+      }
   }
 
   &__item-img {
